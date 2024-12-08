@@ -1,0 +1,153 @@
+/* Variables de colores*/
+
+
+/* GLOBALES */
+body {
+    display: flex;
+}
+
+
+.cont-title{
+    margin-bottom: 10px;
+    width: 50px;
+    border-bottom: 3px solid #cc2a2a;
+}
+
+.txt-title{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+/* Navbar Row ---------------------------------------- */
+
+.vertical-nav {
+    min-height: 100vh;
+    width: 300px;
+    background-color: #cc2a2a;
+    position: fixed;
+}
+
+.vertical-nav .nav-link {
+    color: #ffffff;
+}
+
+.vertical-nav .nav-link:hover {
+    background-color: #700202;
+    color: #ffffff;
+}
+
+.content {
+    margin-left: 300px; /* Coincide con el ancho de la barra lateral */
+}
+
+.nav-cont-name-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-img-perfil{
+    margin-bottom: 15px;
+    height: 115px;
+    width: 115px;
+    border-radius: 100%;
+}
+
+.nav-txt-perfil{
+    color: #ffefef;
+    font-size: 24px;
+}
+
+/* Primera Row ---------------------------------------- */
+
+.cont-intro{
+    padding: 0 5vw 0 0;
+}
+
+.txt-name{
+    font-size: 75px;
+}
+
+.txt-sub-name{
+    font-size: 25px;
+}
+
+.col-first-row {
+    position: relative;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-image: url(/static/img/code_walp.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.col-first-row::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 70%, black 100%);
+    pointer-events: none; /* Para que no interfiera con el contenido */
+    z-index: 1;
+}
+
+/* Segunda Row ---------------------------------------- */
+
+.col-second-row{
+    padding: 40px 30px;
+}
+
+.img-perfil{
+    height: 300px;
+}
+
+.cont-about-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-about{
+    padding-left: 15px;
+}
+
+/* Tercera Row ---------------------------------------- */
+
+.col-third-row{
+    padding: 40px 30px;
+    background-color: #ffefef;
+}
+
+
+.prueba2{
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+}
+
+.prueba3{
+    height: 750px;
+    background-color: rgb(42, 45, 219);
+    color: #ffffff;
+}
+
+.cont-skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px 250px 15px;
+}
+
+.img-skills{
+    height: 50px;
+    margin: 5px;
+}
