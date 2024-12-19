@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Ávila</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 
@@ -16,6 +17,7 @@
             <img class="nav-img-perfil" src="/static/img/Vegetin.png" alt="">
             <h2 class="nav-txt-perfil">Diego Ávila</h2>
         </div>
+        <hr class="separador-navbar">
         <ul class="nav flex-column">
             <li class="nav-item">
                 <a href="#" class="nav-link active" aria-current="page">
@@ -33,15 +35,18 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#contact" class="nav-link">
                     <i class="bi bi-gear-fill me-2"></i> Contact Me
                 </a>
             </li>
         </ul>
-        <hr class="text-secondary mt-auto">
-        <a href="#" class="nav-link text-danger">
-            <i class="bi bi-box-arrow-left me-2"></i> Cerrar sesión
-        </a>
+        <hr class="separador-navbar mt-auto">
+        <div class="cont-redes">
+            <a href="" class="redes-temmporal"></a>
+            <a href="" class="redes-temmporal"></a>
+            <a href="" class="redes-temmporal"></a>
+            <a href="" class="redes-temmporal"></a>
+        </div>
     </div>
 
     <!-- Main Content -->
@@ -53,8 +58,8 @@
                     <h1 class="txt-name">Diego Ávila</h1>
                     <p class="txt-sub-name">I'm Python developer</p>
                     <div>
-                        <button class="btn btn-light">Button 1</button>
-                        <button class="btn btn-light">Button 2</button>
+                        <a class="btn btn-light" href="https://github.com/TheCatAvila" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                        <a class="btn btn-light" href=""><i class="bi bi-file-earmark-person-fill"></i> Download CV</a>
                     </div>
                 </div>
             </div>
@@ -72,7 +77,8 @@
                     <img class="img-perfil" src="/static/img/Vegetin.png" alt="">
                     <div class="cont-about">
                         <h3>Python backend developer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia adipisci modi voluptatibus sunt, maxime rerum cum optio a tenetur officiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia adipisci modi voluptatibus
+                            sunt, maxime rerum cum optio a tenetur officiis.</p>
                     </div>
                 </div>
             </div>
@@ -80,46 +86,89 @@
                 <div class="cont-title">
                     <H2 class="txt-title" id="projects">My projects</H2>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus itaque cupiditate odit culpa placeat,
-                    numquam error modi mollitia tempore voluptatibus hic sit! Doloremque ullam quasi at maxime in esse
-                    excepturi possimus voluptates quisquam cupiditate aliquam vel odit dolorum ipsa sunt, aut debitis
-                    deleniti soluta voluptate laborum? Asperiores, amet corporis omnis blanditiis quaerat assumenda iure
-                    excepturi dolor deleniti sequi magni similique, enim velit vel quibusdam eligendi harum voluptatem
-                    officia rem? Ducimus cumque quasi minima laudantium! Et facere earum, nam iusto rerum quo recusandae
-                    iste incidunt, labore nemo quod necessitatibus soluta neque consequuntur perferendis aut. Neque
-                    repellendus, soluta similique enim quas quisquam eum deleniti doloremque officia laborum libero
-                    repudiandae? Non commodi voluptas omnis pariatur autem molestias doloremque maxime odit cupiditate.
-                    Cupiditate aspernatur blanditiis dolor animi quasi voluptate dolores, incidunt ullam nesciunt
-                    reprehenderit amet officia nobis culpa explicabo voluptatum est adipisci ab voluptatem a optio ut
-                    deserunt doloremque iusto delectus? Voluptas, placeat error.</p>
-            </div>
-            <div class="cont-skills">
-                <div>
-                    <img class="img-skills" src="/static/img/pngwing.com.png" alt="">
-                </div>
-                <div>
-                    <img class="img-skills" src="/static/img/pngwing.com (1).png" alt="">
-                </div>
-                <div>
-                    <img class="img-skills" src="/static/img/django.svg" alt="">
-                </div>
-                <div>
-                    <img class="img-skills" src="/static/img/pngwing.com (2).png" alt="">
-                </div>
-                <div>
-                    <img class="img-skills" src="/static/img/pngwing.com (3).png" alt="">
-                </div>
-                <div>
-                    <img class="img-skills" src="/static/img/pngwing.com (4).png" alt="">
-                </div>
-                <div>
-                    <img class="img-skills" src="/static/img/pngwing.com (5).png" alt="">
-                </div>
-                <div>
-                    <img class="img-skills" src="/static/img/bootstrap-5-logo-icon.svg" alt="">
-                </div>
-                <div>
-                    <img class="img-skills" src="/static/img/pngwing.com (6).png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit voluptatum magni ex vel,
+                    expedita commodi illum est optio tempore eveniet? Atque dignissimos officiis ratione.</p>
+
+                <div h class="cont-cards">
+                    <!-- Calculadora -->
+                    <a href="https://calculadora-promedios.auricleague.com/" target="_blank" class="card">
+                        <img class="card-img-top" src="static/img/calcu.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Calculadora dinámica</h4>
+                            <p class="card-text">Calculadora de promedios ponderados, con cantidad de notas dinámicas.
+                            </p>
+                            <p class="card-text">State: Published</p>
+                            <hr class="separador">
+                            <div class="cont-skills">
+                                <div>
+                                    <img class="img-skills" src="/static/img/pngwing.com (3).png" alt="">
+                                </div>
+                                <div>
+                                    <img class="img-skills" src="/static/img/pngwing.com (4).png" alt="">
+                                </div>
+                                <div>
+                                    <img class="img-skills" src="/static/img/pngwing.com (5).png" alt="">
+                                </div>
+                                <div>
+                                    <img class="img-skills" src="/static/img/bootstrap-5-logo-icon.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Auric League -->
+                    <a href="https://www.auricleague.com/" target="_blank" class="card">
+                        <img class="card-img-top" src="static/img/auric.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Auric League</h4>
+                            <p class="card-text">Liga, gestor de torneos y sistema de ranking de Dead by Daylight</p>
+                            <p class="card-text">State: Published</p>
+                            <hr class="separador">
+                            <div class="cont-skills">
+                                <div>
+                                    <img class="img-skills" src="/static/img/pngwing.com.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="img-skills" src="/static/img/pngwing.com (1).png" alt="">
+                                </div>
+                                <div>
+                                    <img class="img-skills" src="/static/img/pngwing.com (2).png" alt="">
+                                </div>
+                                <div>
+                                    <img class="img-skills" src="/static/img/pngwing.com (3).png" alt="">
+                                </div>
+                                <div>
+                                    <img class="img-skills" src="/static/img/pngwing.com (4).png" alt="">
+                                </div>
+                                <div>
+                                    <img class="img-skills" src="/static/img/pngwing.com (5).png" alt="">
+                                </div>
+                                <div>
+                                    <img class="img-skills" src="/static/img/bootstrap-5-logo-icon.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Auric League -->
+                    <a href="" target="_blank"  class="card">
+                        <img class="card-img-top" src="static/img/anime.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Anime API</h4>
+                            <p class="card-text">Liga, gestor de torneos y sistema de ranking de Dead by Daylight</p>
+                            <p class="card-text">State: Published</p>
+                            <hr class="separador">
+                            <div class="cont-skills">
+                                <div>
+                                    <img class="img-skills" src="/static/img/pngwing.com.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="img-skills" src="/static/img/django.svg" alt="">
+                                </div>
+                                <div>
+                                    <img class="img-skills" src="/static/img/pngwing.com (7).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -127,13 +176,13 @@
         <div class="row">
             <div class="col-md-12 col-first-row">
                 <div class="cont-intro">
-                    <h1 class="txt-name">Contact me</h1>
+                    <h1 id="contact" class="txt-name">Contact me</h1>
                     <p class="txt-sub-name">I'm Python developer</p>
                 </div>
             </div>
         </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
