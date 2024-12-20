@@ -1,10 +1,11 @@
 /* Variables de colores*/
 :root {
-    --color-first: #086788; /* Navbar */
-    --color-second: #DD1C1A; /* Subrayado */
-    --color-third: #FFF1D0;
+    --color-first: #505791; /* Navbar */
+    --color-second: #FF220C; /* Subrayado */
+    --color-third: #F1E4E4;
+    --color-fourth: #F5F5F5;
 
-    --color-txt-light: #ffefef;
+    --color-txt-light: #F5F5F5;
     /* Colores para el modo oscuro */
 }
 
@@ -139,6 +140,7 @@ body {
 
 .col-second-row{
     padding: 40px 30px;
+    background-color: var(--color-fourth);
 }
 
 .img-perfil{
