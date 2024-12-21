@@ -20,7 +20,7 @@
         <hr class="separador-navbar">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">
+                <a href="#home" class="nav-link active" aria-current="page">
                     <i class="bi bi-house-fill me-2"></i> Home
                 </a>
             </li>
@@ -35,6 +35,11 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a href="#skills" class="nav-link">
+                    <i class="bi bi-bar-chart me-2"></i> Skills
+                </a>
+            </li>
+            <li class="nav-item">
                 <a href="#contact" class="nav-link">
                     <i class="bi bi-gear-fill me-2"></i> Contact Me
                 </a>
@@ -42,153 +47,245 @@
         </ul>
         <hr class="separador-navbar mt-auto">
         <div class="cont-redes">
-            <a href="" class="redes-temmporal"></a>
-            <a href="" class="redes-temmporal"></a>
-            <a href="" class="redes-temmporal"></a>
-            <a href="" class="redes-temmporal"></a>
+            <a href="" class="redes">
+                <i class="bi bi-github redes-icon"></i>
+            </a>
+            <a href="" class="redes">
+                <i class="bi bi-linkedin redes-icon"></i>
+            </a>
+            <a href="" class="redes">
+                <i class="bi bi-file-earmark-person-fill redes-icon"></i>
+            </a>
+            <a href="" class="redes">
+                <i class="bi bi-github redes-icon"></i>
+            </a>
         </div>
     </div>
 
     <!-- Main Content -->
     <div class="container-fluid content">
         <!-- Primera row -->
-        <div class="row">
-            <div class="col-md-12 col-first-row">
-                <div class="cont-intro">
-                    <h1 class="txt-name">Diego Ávila</h1>
-                    <p class="txt-sub-name">I'm Python developer</p>
-                    <div>
-                        <a class="btn btn-light" href="https://github.com/TheCatAvila" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-                        <a class="btn btn-light" href=""><i class="bi bi-file-earmark-person-fill"></i> Download CV</a>
+        <section id="home">
+            <div class="row">
+                <div class="col-md-12 col-first-row">
+                    <div class="cont-intro">
+                        <h1 class="txt-name">Diego Ávila</h1>
+                        <p class="txt-sub-name">I'm Python developer</p>
+                        <div>
+                            <a class="btn btn-light" href="https://github.com/TheCatAvila" target="_blank"><i
+                                    class="bi bi-github"></i> GitHub</a>
+                            <a class="btn btn-light" href=""><i class="bi bi-file-earmark-person-fill"></i> Download
+                                CV</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section id="arrow">
+            <div class="row">
+                <div class="col-md-12 col-arrow-row">
+                    <a href="#about" class="cont-arrow">
+                        <i class="bi bi-arrow-down row-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
         <!-- Segunda row -->
-        <div class="row">
-            <div class="col-ms-6 col-second-row">
-                <div class="cont-title">
-                    <H2 class="txt-title" id="about">About</H2>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae repudiandae repellendus ratione dicta
-                    magni architecto voluptates eligendi dolorem voluptas molestias! Fugiat, eos ut! Fuga, explicabo.
-                </p>
-                <div class="cont-about-img">
-                    <img class="img-perfil" src="/static/img/Vegetin.png" alt="">
-                    <div class="cont-about">
-                        <h3>Python backend developer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia adipisci modi voluptatibus
-                            sunt, maxime rerum cum optio a tenetur officiis.</p>
+        <section id="about">
+            <div class="row">
+                <div class="col-ms-12 col-second-row">
+                    <div class="cont-title">
+                        <H2 class="txt-title">About</H2>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae repudiandae repellendus ratione
+                        dicta
+                        magni architecto voluptates eligendi dolorem voluptas molestias! Fugiat, eos ut! Fuga,
+                        explicabo.
+                    </p>
+                    <div class="cont-about-img">
+                        <img class="img-perfil" src="/static/img/Vegetin.png" alt="">
+                        <div class="cont-about">
+                            <h3>Python backend developer</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia adipisci modi
+                                voluptatibus
+                                sunt, maxime rerum cum optio a tenetur officiis.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-ms-6 col-third-row">
-                <div class="cont-title">
-                    <H2 class="txt-title" id="projects">My projects</H2>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit voluptatum magni ex vel,
-                    expedita commodi illum est optio tempore eveniet? Atque dignissimos officiis ratione.</p>
-
-                <div h class="cont-cards">
-                    <!-- Calculadora -->
-                    <a href="https://calculadora-promedios.auricleague.com/" target="_blank" class="card">
-                        <img class="card-img-top" src="static/img/calcu.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Calculadora dinámica</h4>
-                            <p class="card-text">Calculadora de promedios ponderados, con cantidad de notas dinámicas.
-                            </p>
-                            <p class="card-text">Front-end: Hecho por mi</p>
-                            <p class="card-text">Back-end: No tiene backed</p>
-                            <p class="card-text">State: Published</p>
-                            <hr class="separador">
-                            <div class="cont-skills">
-                                <div>
-                                    <img class="img-skills" src="/static/img/pngwing.com (3).png" alt="">
-                                </div>
-                                <div>
-                                    <img class="img-skills" src="/static/img/pngwing.com (4).png" alt="">
-                                </div>
-                                <div>
-                                    <img class="img-skills" src="/static/img/pngwing.com (5).png" alt="">
-                                </div>
-                                <div>
-                                    <img class="img-skills" src="/static/img/bootstrap-5-logo-icon.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- Auric League -->
-                    <a href="https://www.auricleague.com/" target="_blank" class="card">
-                        <img class="card-img-top" src="static/img/auric.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Auric League</h4>
-                            <p class="card-text">Liga, gestor de torneos y sistema de ranking de Dead by Daylight</p>
-                            <p class="card-text">Front-end: Hecho por mi</p>
-                            <p class="card-text">Back-end: Hecho por mi</p>
-                            <p class="card-text">State: Published</p>
-                            <hr class="separador">
-                            <div class="cont-skills">
-                                <div>
-                                    <img class="img-skills" src="/static/img/pngwing.com.png" alt="">
-                                </div>
-                                <div>
-                                    <img class="img-skills" src="/static/img/pngwing.com (1).png" alt="">
-                                </div>
-                                <div>
-                                    <img class="img-skills" src="/static/img/pngwing.com (2).png" alt="">
-                                </div>
-                                <div>
-                                    <img class="img-skills" src="/static/img/pngwing.com (3).png" alt="">
-                                </div>
-                                <div>
-                                    <img class="img-skills" src="/static/img/pngwing.com (4).png" alt="">
-                                </div>
-                                <div>
-                                    <img class="img-skills" src="/static/img/pngwing.com (5).png" alt="">
-                                </div>
-                                <div>
-                                    <img class="img-skills" src="/static/img/bootstrap-5-logo-icon.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- Auric League -->
-                    <a href="" target="_blank"  class="card">
-                        <img class="card-img-top" src="static/img/anime.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Anime API</h4>
-                            <p class="card-text">Liga, gestor de torneos y sistema de ranking de Dead by Daylight</p>
-                            <p class="card-text">Front-end: Plantilla</p>
-                            <p class="card-text">Back-end: Hecho por mi</p>
-                            <p class="card-text">State: Published</p>
-                            <hr class="separador">
-                            <div class="cont-skills">
-                                <div>
-                                    <img class="img-skills" src="/static/img/pngwing.com.png" alt="">
-                                </div>
-                                <div>
-                                    <img class="img-skills" src="/static/img/django.svg" alt="">
-                                </div>
-                                <div>
-                                    <img class="img-skills" src="/static/img/pngwing.com (7).png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+        </section>
         <!-- Tercera row -->
-        <div class="row">
-            <div class="col-md-12 col-first-row">
-                <div class="cont-intro">
-                    <h1 id="contact" class="txt-name">Contact me</h1>
-                    <p class="txt-sub-name">I'm Python developer</p>
+        <section id="projects">
+            <div class="row">
+                <div class="col-ms-12 col-third-row">
+                    <div class="cont-title">
+                        <H2 class="txt-title" id="projects">My projects</H2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit voluptatum magni ex
+                        vel,
+                        expedita commodi illum est optio tempore eveniet? Atque dignissimos officiis ratione.</p>
+
+                    <div h class="cont-cards">
+                        <!-- Calculadora -->
+                        <a href="https://calculadora-promedios.auricleague.com/" target="_blank" class="card">
+                            <img class="card-img-top" src="static/img/calcu.png" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Promedios ponderados</h4>
+                                <p class="card-text">Calculadora de promedios ponderados con notas dinámicas.</p>
+                                <p class="card-text txt-details">
+                                    Esta es una aplicación front-end sencilla, una versión mejorada de una de mis primeras aplicaciones desarrolladas en mi juventud y publicada en Google Play, donde obtuvo más de 500 descargas. Incluye:
+                                </p>
+                                <ul>
+                                    <li class="card-text txt-details">Opción para promediar notas con o sin pesos distintos</li>
+                                    <li class="card-text txt-details">Cantidad de notas dinámicas</li>
+                                    <li class="card-text txt-details">Modo día/noche</li>
+                                </ul>
+                                <hr class="separador">
+                                <div class="cont-skills">
+                                    <div>
+                                        <img class="img-skills" src="/static/img/pngwing.com (3).png" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-skills" src="/static/img/pngwing.com (4).png" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-skills" src="/static/img/pngwing.com (5).png" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-skills" src="/static/img/bootstrap-5-logo-icon.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Auric League -->
+                        <a href="https://www.auricleague.com/" target="_blank" class="card">
+                            <img class="card-img-top" src="static/img/auric.png" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Auric League</h4>
+                                <p class="card-text">Liga, gestor de torneos y sistema de ranking de Dead by Daylight
+                                </p>
+                                <p class="card-text txt-details">
+                                    Desarrollé tanto el backend como el frontend de este proyecto, el más complejo que
+                                    he creado hasta la fecha. Incluye:
+                                </p>
+                                <ul>
+                                    <li class="card-text txt-details">Sistema de registro y login con Flask Session</li>
+                                    <li class="card-text txt-details">Verificación de correos con Flask-Mail</li>
+                                    <li class="card-text txt-details">Hashing de contraseñas con bcrypt</li>
+                                    <li class="card-text txt-details">CRUDs múltiples</li>
+                                    <li class="card-text txt-details">Perfiles personalizados</li>
+                                </ul>
+                                <div class="cont-main-auric-data">
+                                    <div class="cont-auric-data">
+                                        <h3 class="tittle-data">+10</h3>
+                                        <p class="txt-data">Torneos creados</p>
+                                    </div>
+                                    <div class="cont-auric-data">
+                                        <h3 class="tittle-data">+250</h3>
+                                        <p class="txt-data">Usuarios registrados</p>
+                                    </div>
+                                    <div class="cont-auric-data">
+                                        <h3 class="tittle-data">+6</h3>
+                                        <p class="txt-data">Meses de desarrollo</p>
+                                    </div>
+
+                                </div>
+
+
+                                <hr class="separador">
+                                <div class="cont-skills">
+                                    <div>
+                                        <img class="img-skills" src="/static/img/pngwing.com.png" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-skills" src="/static/img/pngwing.com (1).png" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-skills" src="/static/img/pngwing.com (2).png" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-skills" src="/static/img/pngwing.com (3).png" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-skills" src="/static/img/pngwing.com (4).png" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-skills" src="/static/img/pngwing.com (5).png" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-skills" src="/static/img/bootstrap-5-logo-icon.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Auric League -->
+                        <a href="" target="_blank" class="card">
+                            <img class="card-img-top" src="static/img/anime.png" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Anime API</h4>
+                                <p class="card-text">Liga, gestor de torneos y sistema de ranking de Dead by Daylight
+                                </p>
+                                <p class="card-text txt-details">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Sit in eligendi maiores ipsam ut labore recusandae neque saepe? Culpa labore,
+                                    excepturi laboriosam aspernatur ex repellat!</p>
+                                <hr class="separador">
+                                <div class="cont-skills">
+                                    <div>
+                                        <img class="img-skills" src="/static/img/pngwing.com.png" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-skills" src="/static/img/django.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-skills" src="/static/img/pngwing.com (7).png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- Cuarta row -->
+        <section id="skills">
+            <div class="row">
+                <div class="col-ms-12 col-second-row">
+                    <div class="cont-title">
+                        <H2 class="txt-title">Skills</H2>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae repudiandae repellendus ratione
+                        dicta
+                        magni architecto voluptates eligendi dolorem voluptas molestias! Fugiat, eos ut! Fuga,
+                        explicabo.
+                    </p>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                </div>
+            </div>
+        </section>
+        <!-- Quinta row -->
+        <section id="contact">
+            <div class="row">
+                <div class="col-md-12 col-first-row">
+                    <div class="cont-intro">
+                        <h1 id="contact" class="txt-name">Contact me</h1>
+                        <p class="txt-sub-name">I'm Python developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="row footer">
+                <div class="col-md-12">
+                    <p class="text-center">© 2023 Diego Ávila. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/navbar-btns.js"></script>
 </body>
 
 </html>
