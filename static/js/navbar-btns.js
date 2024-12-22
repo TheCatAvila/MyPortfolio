@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Mostrar u ocultar la sección arrow
         if (window.scrollY === 0) {
             arrowSection.style.display = 'block';
         } else {
