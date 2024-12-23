@@ -313,6 +313,26 @@ body {
     color: var(--color-first);
 }
 
+/* Cuarta sección ---------------------------------------- */
+
+.cont-formacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-certificate{
+    height: 250px;
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+
+.img-certificate:hover{
+    transform: scale(1.04);
+}
+
 /* Footer */
 
 .footer {
@@ -408,6 +428,10 @@ body {
 
     .txt-sub-contact{
         font-size: 20px;
+    }
+
+    .img-certificate{
+        height: 150px;
     }
 }
 
