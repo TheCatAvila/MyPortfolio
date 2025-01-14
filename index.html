@@ -14,7 +14,7 @@
 <body>
     <div id="loader">
         <div class="spinner"></div>
-    </div>    
+    </div>
     <!-- Navbar Vertical -->
     <div class="vertical-nav d-flex flex-column p-3">
         <div class="nav-cont-name-img">
@@ -273,7 +273,7 @@
                                 </div>
                             </div>
                         </a>
-                        <!-- Auric League -->
+                        <!-- Anime API -->
                         <a href="#home" class="card">
                             <img class="card-img-top" src="static/img/anime.webp" alt="Imagen de la web de anime"
                                 loading="lazy">
@@ -313,6 +313,61 @@
                                 </div>
                             </div>
                         </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-third-row">
+                    <!-- inp_kwargs -->
+                    <hr class="separador mt-auto">
+                    <div>
+                        <div class="library-summary">
+                            <h3>inp_kwargs</h3>
+                            <p>
+                                Una librería de Python para validar entradas de usuario de forma fácil y eficiente, evitando errores y 
+                                asegurando una experiencia robusta.
+                            </p>
+                            <ul>
+                                <li>Valida enteros, flotantes y cadenas de texto.</li>
+                                <li>Soporte para mensajes de error personalizados.</li>
+                                <li>Evita entradas inválidas con criterios como rangos y patrones.</li>
+                            </ul>
+                            <p><strong>Ejemplo:</strong></p>
+                            <pre><code>
+    <span class="code-red">from</span> inp_kwargs <span class="code-red">import</span> input_int
+
+    opcion = input_int(
+        <span class="code-blue">"""
+        Bienvenido a Pizzería Python
+        1. Margarita
+        2. Pepperoni
+        3. Cuatro Quesos
+        4. Salir
+        Ingresa el número de tu elección (1-4): 
+        """</span>, 
+        min_value=<span class="code-white">1</span>, 
+        max_value=<span class="code-white">4</span>, 
+        type_error_message=<span class="code-blue">"Error: Debes ingresar un número válido."</span>,
+        clear_console=<span class="code-white">True</span>
+    )
+
+    <span class="code-red">if</span> opcion == <span class="code-white">4</span>:
+        <span class="code-white">print</span>(<span class="code-blue">"Gracias por visitarnos. ¡Hasta pronto!"</span>)
+    <span class="code-red">else</span>:
+        pizzas = {<span class="code-white">1</span>: <span class="code-blue">"Margarita"</span>, 
+                    <span class="code-white">2</span>: <span class="code-blue">"Pepperoni"</span>, 
+                    <span class="code-white">3</span>: <span class="code-blue">"Cuatro Quesos"</span>}
+        <span class="code-white">print</span>(f<span class="code-blue">"Has elegido la pizza {pizzas[opcion]}. ¡Gracias por tu pedido!"</span>)
+                            </code></pre>
+                        </div>
+                        
+                        <div>
+                            <a href="https://pypi.org/project/inp_kwargs/" target="_blank" class="custom-btn">
+                                 Ver en PyPl</a>
+                            <a href="https://github.com/TheCatAvila/inp_kwargs" target="_blank" class="custom-btn"> 
+                                Ver en GitHub</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -379,8 +434,8 @@
     <script src="/static/js/navbar-btns.js"></script>
     <script src="/static/js/fade-in.js"></script>
     <script src="/static/js/loader.js"></script>
-    
-    
+
+
 </body>
 
 </html>

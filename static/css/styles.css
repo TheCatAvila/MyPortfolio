@@ -13,8 +13,27 @@
 }
 
 /* GLOBALES */
+/* Estilo del contenedor de código */
 body {
     display: flex;
+}
+
+pre{
+    padding: 10px;
+    background-color: var(--color-first);
+    color: var(--color-txt-light);
+}
+
+.code-red {
+    color: var(--color-second); /* Palabras clave */
+}
+
+.code-blue {
+    color: #007bff; /* Cadenas de texto */
+}
+
+.code-white {
+    color: var(--color-fourth); /* Texto genérico */
 }
 
 .cont-title{
@@ -265,6 +284,30 @@ body {
     flex-wrap: wrap;
 }
 
+.special-card{
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.custom-btn{
+    background-color: var(--color-second);
+    color: var(--color-fourth);
+    padding: 10px 10px;
+    margin: 10px 10px 10px 0;
+    text-decoration: none;
+    transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.custom-btn:hover{
+    background-color: var(--color-fourth);
+    color: var(--color-second);
+    transform: scale(1.05); /* Efecto de agrandamiento suave */
+    box-shadow: 0 4px 8px var(--color-box-shadow); /* Sombra sutil al hacer hover */
+}
+
 .card{
     margin: 10px;
     width:450px;
@@ -312,7 +355,6 @@ body {
     margin-bottom: -3px;
     color: var(--color-first);
 }
-
 /* Cuarta sección ---------------------------------------- */
 
 .cont-formacion{
