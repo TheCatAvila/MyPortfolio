@@ -1,0 +1,26 @@
+name: Deploy static site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Deploy al servidor
+        uses: appleboy/ssh-action@v1
+        with:
+          host: 145.223.126.35
+          username: deploy
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd /opt/docker/portfolio
+            rm -rf public/*
+            cp -r repo/* public/
+            docker compose restart
