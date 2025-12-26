@@ -21,6 +21,15 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd /opt/docker/portfolio
+
+            if [ ! -d repo ]; then
+              git clone https://github.com/TheCatAvila/MyPortfolio.git repo
+            else
+              cd repo
+              git pull origin main
+              cd ..
+            fi
+
             rm -rf public/*
             cp -r repo/* public/
             docker compose restart
