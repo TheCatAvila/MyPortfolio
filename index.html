@@ -1,439 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego Ávila</title>
+    <title>Diego Ávila | Desarrollador Python Back-end</title>
+    <meta name="description" content="Portafolio de Diego Ávila, desarrollador back-end chileno con Python, Flask y Django. Proyectos, formación y contacto.">
+    <meta property="og:title" content="Diego Ávila | Desarrollador Python Back-end">
+    <meta property="og:image" content="/static/img/test1.jpg">
     <link rel="icon" href="/static/img/LogoAvila.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/styles.css">
 </head>
-
 <body>
-    <div id="loader">
-        <div class="spinner"></div>
-    </div>
-    <!-- Navbar Vertical -->
-    <div class="vertical-nav d-flex flex-column p-3">
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <div id="loader" aria-hidden="true"><div class="spinner"></div></div>
+
+    <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <!-- Navbar vertical -->
+    <aside class="vertical-nav" id="sidebar">
         <div class="nav-cont-name-img">
-            <img class="nav-img-perfil" src="/static/img/test2.jpg" alt="Foto de perfil del navbar">
-            <h2 class="nav-txt-perfil">Diego Ávila</h2>
+            <img class="nav-img-perfil" src="/static/img/test2.jpg" alt="Diego Ávila" width="115" height="115">
+            <p class="nav-txt-perfil">Diego Ávila</p>
+            <p class="nav-role">Desarrollador Python</p>
         </div>
         <hr class="separador-navbar">
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a href="#home" class="nav-link active" aria-current="page">
-                    <i class="bi bi-house me-2"></i> Inicio
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#about" class="nav-link">
-                    <i class="bi bi-person me-2"></i> Sobre mí
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#projects" class="nav-link">
-                    <i class="bi bi-suitcase-lg me-2"></i> Mis proyectos
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#training" class="nav-link">
-                    <i class="bi bi-bar-chart me-2"></i> Formación
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact" class="nav-link">
-                    <i class="bi bi-envelope me-2"></i> Contacto
-                </a>
-            </li>
-        </ul>
-        <hr class="separador-navbar mt-auto">
+        <nav aria-label="Principal">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page"><i class="bi bi-house me-2"></i>Inicio</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link"><i class="bi bi-person me-2"></i>Sobre mí</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link"><i class="bi bi-suitcase-lg me-2"></i>Proyectos</a></li>
+                <li class="nav-item"><a href="#training" class="nav-link"><i class="bi bi-mortarboard me-2"></i>Formación</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link"><i class="bi bi-envelope me-2"></i>Contacto</a></li>
+            </ul>
+        </nav>
         <div class="cont-redes">
-            <a href="https://github.com/TheCatAvila" target="_blank" class="redes">
-                <i class="bi bi-github redes-icon"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/diego-avila-435977318" target="_blank" class="redes">
-                <i class="bi bi-linkedin redes-icon"></i>
-            </a>
-            <a href="/static/pdf/Diego_Avila_CV.pdf" target="_blank" class="redes">
-                <i class="bi bi-file-earmark-person-fill redes-icon"></i>
-            </a>
-            <a href="#contact" class="redes">
-                <i class="bi bi-envelope redes-icon"></i>
-            </a>
+            <a href="https://github.com/TheCatAvila" target="_blank" rel="noopener" class="redes" aria-label="GitHub"><i class="bi bi-github redes-icon"></i></a>
+            <a href="https://www.linkedin.com/in/diego-avila-435977318" target="_blank" rel="noopener" class="redes" aria-label="LinkedIn"><i class="bi bi-linkedin redes-icon"></i></a>
+            <a href="/static/pdf/Diego_Avila_CV.pdf" target="_blank" rel="noopener" class="redes" aria-label="Descargar CV"><i class="bi bi-file-earmark-person-fill redes-icon"></i></a>
+            <a href="#contact" class="redes" aria-label="Contacto"><i class="bi bi-envelope redes-icon"></i></a>
         </div>
-    </div>
+    </aside>
 
-    <!-- Main Content -->
-    <div class="container-fluid content">
-        <!-- Primera sección -->
-        <section id="home">
-            <div class="row">
-                <div class="col-md-12 col-first-row">
-                    <div class="cont-intro">
-                        <h1 class="txt-name">Diego Ávila</h1>
-                        <p class="txt-sub-name">Soy desarrollador Python</p>
-                        <div>
-                            <a class="btn btn-light" href="https://github.com/TheCatAvila" target="_blank"><i
-                                    class="bi bi-github"></i> GitHub</a>
-                            <a class="btn btn-light" href="/static/pdf/Diego_Avila_CV.pdf" target="_blank"><i
-                                    class="bi bi-file-earmark-person-fill"></i> Download
-                                CV</a>
+    <main class="content" id="main">
+        <!-- Inicio -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="cont-intro">
+                <h1 class="txt-name" id="hero-title">Diego Ávila</h1>
+                <p class="txt-sub-name">Desarrollador back-end con Python: APIs, bases de datos y lógica de aplicaciones.</p>
+                <div class="hero-actions">
+                    <a class="btn-main" href="#projects">Ver proyectos</a>
+                    <a class="btn-ghost" href="/static/pdf/Diego_Avila_CV.pdf" target="_blank" rel="noopener"><i class="bi bi-download"></i> Descargar CV</a>
+                    <a class="btn-ghost" href="https://github.com/TheCatAvila" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+            </div>
+            <a href="#about" class="cont-arrow" aria-label="Ir a Sobre mí"><i class="bi bi-arrow-down row-icon"></i></a>
+        </section>
+
+        <!-- Sobre mí -->
+        <section id="about" class="section section-light" aria-labelledby="about-title">
+            <h2 class="txt-title fade-in" id="about-title">Sobre mí</h2>
+            <p class="lead-text fade-in">Soy Diego Ávila, desarrollador back-end chileno de 27 años. Trabajo como Desarrollador Junior en Inge! y estoy terminando Ingeniería en Informática.</p>
+            <div class="cont-about-img">
+                <img class="img-perfil fade-in" src="/static/img/test1.jpg" alt="Retrato de Diego Ávila" width="325" height="325" loading="lazy">
+                <div class="cont-about fade-in">
+                    <h3>Desarrollador Python</h3>
+                    <dl class="cont-points">
+                        <div><dt>Nacionalidad</dt><dd>Chilena</dd></div>
+                        <div><dt>Edad</dt><dd>27 años</dd></div>
+                        <div><dt>Idiomas</dt><dd>Español nativo, inglés básico (lectura y escritura)</dd></div>
+                        <div><dt>Disponibilidad</dt><dd>A convenir</dd></div>
+                    </dl>
+                    <p>Con estudios en Inacap, aprendizaje autodidacta y experiencia laboral, trabajo con <strong>Python, C# y JavaScript</strong>, y con los frameworks <strong>Flask, Django, .NET, Bootstrap y React</strong>. Uso bases de datos <strong>MySQL, SQL Server, SQLite, Oracle y MongoDB</strong>, metodologías ágiles como <strong>Scrum</strong>, control de versiones con <strong>Git</strong> y tecnologías web como <strong>HTML y CSS</strong>.</p>
+                </div>
+            </div>
+            <p class="fade-in">Tengo formación full-stack, pero me enfoco en el back-end. Mi mayor experiencia está en estas tecnologías:</p>
+            <ul class="cont-skills-about fade-in" aria-label="Tecnologías principales">
+                <li><img class="skill-about" src="/static/img/Python.png" alt="Python" loading="lazy"></li>
+                <li><img class="skill-about" src="/static/img/Flask.png" alt="Flask" loading="lazy"></li>
+                <li><img class="skill-about" src="/static/img/Django.png" alt="Django" loading="lazy"></li>
+                <li><img class="skill-about" src="/static/img/MySQL.png" alt="MySQL" loading="lazy"></li>
+                <li><img class="skill-about" src="/static/img/JS.png" alt="JavaScript" loading="lazy"></li>
+                <li><img class="skill-about" src="/static/img/HTML.png" alt="HTML" loading="lazy"></li>
+                <li><img class="skill-about" src="/static/img/CSS.png" alt="CSS" loading="lazy"></li>
+                <li><img class="skill-about" src="/static/img/Bootstrap.svg" alt="Bootstrap" loading="lazy"></li>
+                <li><img class="skill-about" src="/static/img/Git.png" alt="Git" loading="lazy"></li>
+            </ul>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="projects" class="section section-gray" aria-labelledby="projects-title">
+            <h2 class="txt-title fade-in" id="projects-title">Proyectos</h2>
+            <p class="fade-in">Tres proyectos recientes: uno de diseño front-end, mi proyecto más completo y uno centrado en back-end con Django.</p>
+
+            <div class="cont-cards">
+                <!-- Auric League -->
+                <article class="card card-featured fade-in">
+                    <img class="card-img-top" src="/static/img/auric.webp" alt="Página de inicio de Auric League" width="900" height="500" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Auric League <span class="badge-publi">Publicada</span></h3>
+                        <p class="card-text">Liga, gestor de torneos y ranking para Dead by Daylight.</p>
+                        <p class="txt-details">Desarrollé el backend y el frontend. Es el proyecto más complejo que he creado. Incluye:</p>
+                        <ul class="txt-details">
+                            <li>Registro y login con Flask Session</li>
+                            <li>Verificación de correo con Flask-Mail</li>
+                            <li>Contraseñas con hash bcrypt</li>
+                            <li>CRUDs múltiples y perfiles personalizados</li>
+                        </ul>
+                        <div class="cont-main-auric-data">
+                            <div class="cont-auric-data"><p class="tittle-data">+10</p><p class="txt-data">Torneos creados</p></div>
+                            <div class="cont-auric-data"><p class="tittle-data">+250</p><p class="txt-data">Usuarios registrados</p></div>
+                            <div class="cont-auric-data"><p class="tittle-data">+6</p><p class="txt-data">Meses de desarrollo</p></div>
                         </div>
+                        <ul class="cont-skills" aria-label="Tecnologías">
+                            <li><img class="img-skills" src="/static/img/Python.png" alt="Python" loading="lazy"></li>
+                            <li><img class="img-skills" src="/static/img/Flask.png" alt="Flask" loading="lazy"></li>
+                            <li><img class="img-skills" src="/static/img/MySQL.png" alt="MySQL" loading="lazy"></li>
+                            <li><img class="img-skills" src="/static/img/JS.png" alt="JavaScript" loading="lazy"></li>
+                            <li><img class="img-skills" src="/static/img/HTML.png" alt="HTML" loading="lazy"></li>
+                            <li><img class="img-skills" src="/static/img/CSS.png" alt="CSS" loading="lazy"></li>
+                            <li><img class="img-skills" src="/static/img/Bootstrap.svg" alt="Bootstrap" loading="lazy"></li>
+                        </ul>
+                        <a class="card-link" href="https://www.auricleague.com/" target="_blank" rel="noopener">Visitar sitio <i class="bi bi-box-arrow-up-right"></i></a>
                     </div>
+                </article>
+
+                <!-- Calculadora -->
+                <article class="card fade-in">
+                    <img class="card-img-top" src="/static/img/calcu.webp" alt="Calculadora de promedios ponderados" width="900" height="500" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Promedios ponderados <span class="badge-publi">Publicada</span></h3>
+                        <p class="card-text">Calculadora de promedios con notas dinámicas.</p>
+                        <p class="txt-details">Aplicación front-end, versión mejorada de una de mis primeras apps, que en Google Play superó las <strong>5.000 descargas</strong>. Incluye:</p>
+                        <ul class="txt-details">
+                            <li>Promedio con o sin ponderaciones</li>
+                            <li>Cantidad de notas dinámica</li>
+                            <li>Modo día/noche</li>
+                        </ul>
+                        <ul class="cont-skills" aria-label="Tecnologías">
+                            <li><img class="img-skills" src="/static/img/JS.png" alt="JavaScript" loading="lazy"></li>
+                            <li><img class="img-skills" src="/static/img/HTML.png" alt="HTML" loading="lazy"></li>
+                            <li><img class="img-skills" src="/static/img/CSS.png" alt="CSS" loading="lazy"></li>
+                            <li><img class="img-skills" src="/static/img/Bootstrap.svg" alt="Bootstrap" loading="lazy"></li>
+                        </ul>
+                        <a class="card-link" href="https://calculadora-promedios.auricleague.com/" target="_blank" rel="noopener">Visitar sitio <i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Anime -->
+                <article class="card fade-in">
+                    <img class="card-img-top" src="/static/img/anime.webp" alt="Sitio web Anime Info Finder" width="900" height="500" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Anime Info Finder</h3>
+                        <p class="card-text">Consulta información detallada de tus animes favoritos.</p>
+                        <p class="txt-details">Backend completo en Django sobre la API REST de Jikan. El frontend parte de una plantilla existente. Incluye:</p>
+                        <ul class="txt-details">
+                            <li>Consumo de la API REST de Jikan</li>
+                            <li>Registro y login con Django</li>
+                        </ul>
+                        <ul class="cont-skills" aria-label="Tecnologías">
+                            <li><img class="img-skills" src="/static/img/Python.png" alt="Python" loading="lazy"></li>
+                            <li><img class="img-skills" src="/static/img/Django.png" alt="Django" loading="lazy"></li>
+                            <li><img class="img-skills" src="/static/img/SQLite.png" alt="SQLite" loading="lazy"></li>
+                        </ul>
+                        <!-- Reemplaza # por el enlace del repositorio o la demo -->
+                        <a class="card-link" href="#">Próximamente</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- inp_kwargs -->
+            <div class="library-summary fade-in">
+                <h3>inp_kwargs</h3>
+                <p>Librería de Python para validar entradas de usuario en consola de forma simple y robusta.</p>
+                <ul>
+                    <li>Valida enteros, flotantes y cadenas de texto.</li>
+                    <li>Mensajes de error personalizados.</li>
+                    <li>Rechaza entradas inválidas por rango o patrón.</li>
+                </ul>
+                <p><strong>Ejemplo</strong></p>
+<pre><code><span class="code-red">from</span> inp_kwargs <span class="code-red">import</span> input_int
+
+opcion = input_int(
+    <span class="code-blue">"""
+    Bienvenido a Pizzería Python
+    1. Margarita
+    2. Pepperoni
+    3. Cuatro Quesos
+    4. Salir
+    Ingresa el número de tu elección (1-4): 
+    """</span>,
+    min_value=<span class="code-white">1</span>,
+    max_value=<span class="code-white">4</span>,
+    type_error_message=<span class="code-blue">"Error: Debes ingresar un número válido."</span>,
+    clear_console=<span class="code-white">True</span>
+)
+
+<span class="code-red">if</span> opcion == <span class="code-white">4</span>:
+    <span class="code-white">print</span>(<span class="code-blue">"Gracias por visitarnos. ¡Hasta pronto!"</span>)
+<span class="code-red">else</span>:
+    pizzas = {<span class="code-white">1</span>: <span class="code-blue">"Margarita"</span>, <span class="code-white">2</span>: <span class="code-blue">"Pepperoni"</span>, <span class="code-white">3</span>: <span class="code-blue">"Cuatro Quesos"</span>}
+    <span class="code-white">print</span>(<span class="code-blue">f"Has elegido la pizza {pizzas[opcion]}. ¡Gracias por tu pedido!"</span>)</code></pre>
+                <a href="https://pypi.org/project/inp_kwargs/" target="_blank" rel="noopener" class="custom-btn">Ver en PyPI</a>
+                <a href="https://github.com/TheCatAvila/inp_kwargs" target="_blank" rel="noopener" class="custom-btn">Ver en GitHub</a>
+            </div>
+        </section>
+
+        <!-- Formación -->
+        <section id="training" class="section section-light" aria-labelledby="training-title">
+            <h2 class="txt-title fade-in" id="training-title">Formación</h2>
+            <p class="fade-in">Analista Programador titulado y estudiante de Ingeniería en Informática. Complemento mis estudios con cursos, entre ellos uno de Python en Udemy. Haz clic en un certificado para verlo completo.</p>
+            <div class="cont-formacion fade-in">
+                <a href="/static/pdf/Diseño y gestión de base de datos.pdf" target="_blank" rel="noopener"><img class="img-certificate" src="/static/img/basedatos.png" alt="Certificado: Diseño y gestión de base de datos" loading="lazy"></a>
+                <a href="/static/pdf/Master en Python.pdf" target="_blank" rel="noopener"><img class="img-certificate" src="/static/img/MasterPython.jpg" alt="Certificado Udemy: Máster en Python" loading="lazy"></a>
+                <a href="/static/pdf/Diseño ágil de sistemas.pdf" target="_blank" rel="noopener"><img class="img-certificate" src="/static/img/agile.png" alt="Certificado: Diseño ágil de sistemas" loading="lazy"></a>
+                <a href="/static/pdf/Desarrollo de aplicaciones básicas.pdf" target="_blank" rel="noopener"><img class="img-certificate" src="/static/img/apps.png" alt="Certificado: Desarrollo de aplicaciones básicas" loading="lazy"></a>
+                <a href="/static/pdf/Soporte computacional.pdf" target="_blank" rel="noopener"><img class="img-certificate" src="/static/img/soporte.png" alt="Certificado: Soporte computacional" loading="lazy"></a>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contact" class="hero hero-contact" aria-labelledby="contact-title">
+            <div class="cont-intro">
+                <h2 class="txt-name txt-contact" id="contact-title">Hablemos</h2>
+                <p class="txt-sub-name">¿Tienes un proyecto o una oferta? Escríbeme.</p>
+                <div class="hero-actions">
+                    <a class="btn-main" href="mailto:aviladiego655@gmail.com"><i class="bi bi-envelope"></i> aviladiego655@gmail.com</a>
+                    <a class="btn-ghost" href="https://www.linkedin.com/in/diego-avila-435977318" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
                 </div>
             </div>
         </section>
-        <section id="arrow">
-            <div class="row">
-                <div class="col-md-12 col-arrow-row">
-                    <a href="#about" class="cont-arrow">
-                        <i class="bi bi-arrow-down row-icon"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Segunda sección -->
-        <section id="about">
-            <div class="row">
-                <div class="col-md-12 col-second-row">
-                    <div class="cont-title fade-in">
-                        <H2 class="txt-title">Sobre mí</H2>
-                    </div>
-                    <p class="fade-in">¡Hola! Soy Diego Ávila, un desarrollador back-end chileno con 27 años. Actualmente estoy trabajando como 
-                        Desarrollador Junior en Inge! mientras termino mis estudios como Ingeniero
-                        en Informática.
-                    </p>
-                    <div class="cont-about-img">
-                        <div class="cont-img  fade-in">
-                            <img class="img-perfil" src="/static/img/test1.jpg" alt="Foto de perfil" loading="lazy">
-                        </div>
-                        <div class="cont-about fade-in">
-                            <h3>Desarrollador Python</h3>
-                            <p>Manejo el español como lengua nativa y tengo conocimientos básicos de inglés,
-                                especialmente en lectura y escritura.</p>
-                            <div class="cont-points">
-                                <p class="txt-points"><i class="bi bi-chevron-double-right me-2 span-red"></i> <span
-                                        class="span-bold">Nombre: </span>Diego Ávila</p>
-                                <p class="txt-points"><i class="bi bi-chevron-double-right me-2 span-red"></i> <span
-                                        class="span-bold">Nacionalidad: </span>Chilena</p>
-                                <p class="txt-points"><i class="bi bi-chevron-double-right me-2 span-red"></i> <span
-                                        class="span-bold">Edad: </span>27 años</p>
-                                <p class="txt-points"><i class="bi bi-chevron-double-right me-2 span-red"></i> <span
-                                        class="span-bold">Disponibilidad: </span>A convenir</p>
-                            </div>
-                            <p>Gracias a mis estudios en Inacap y mi aprendizaje autodidacta, y experiencia laboral he adquirido experiencia
-                                en lenguajes de programación como <span class="span-bold">Python, C# y
-                                    JavaScript,</span> así como en frameworks como <span class="span-bold">Flask,
-                                    Django, .NET, Bootstrap y React.</span>
-                                También tengo experiencia con bases de datos como <span class="span-bold">MySQL, SQL Server, SQLite,
-                                    Oracle y MongoDB.</span>
 
-                                Además, cuento con conocimientos en metodologías ágiles como <span
-                                    class="span-bold">Scrum</span> y en el uso de sistemas de control de versiones
-                                <span class="span-bold">Git</span>. Domino tecnologías web como <span
-                                    class="span-bold">HTML y CSS</span>.
-                            </p>
-                        </div>
-                    </div>
-                    <p class="fade-in">Aunque tengo formación como desarrollador full-stack, mi principal interés está
-                        en el desarrollo back-end,
-                        trabajando con bases de datos, APIs y la lógica de las aplicaciones.<span class="span-red"> Mi
-                            mayor experiencia se encuentra con las siguientes tecnologías:</span></p>
-
-                    <hr class="separador separador-margin fade-in">
-                    <div class="cont-skills-about fade-in">
-                        <img class="skill-about" src="/static/img/Python.png" alt="Python" loading="lazy">
-                        <img class="skill-about" src="/static/img/Flask.png" alt="Flask" loading="lazy">
-                        <img class="skill-about" src="/static/img/Django.png" alt="Django" loading="lazy">
-                        <img class="skill-about" src="/static/img/MySQL.png" alt="MySQL" loading="lazy">
-                        <img class="skill-about" src="/static/img/JS.png" alt="JS" loading="lazy">
-                        <img class="skill-about" src="/static/img/HTML.png" alt="HTML" loading="lazy">
-                        <img class="skill-about" src="/static/img/CSS.png" alt="CSS" loading="lazy">
-                        <img class="skill-about" src="/static/img/Bootstrap.svg" alt="Bootstrap" loading="lazy">
-                        <img class="skill-about" src="/static/img/Git.png" alt="Git" loading="lazy">
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- Tercera sección -->
-        <section id="projects">
-            <div class="row">
-                <div class="col-md-12 col-third-row">
-                    <div class="cont-title fade-in">
-                        <H2 class="txt-title" id="projects">Mis proyectos</H2>
-                    </div>
-                    <p class="fade-in">He seleccionado tres proyectos recientes para mi portafolio: el primero destaca
-                        mis habilidades en diseño y desarrollo front-end; el segundo, mi proyecto más completo hasta
-                        ahora, incluye múltiples funciones complejas; y el tercero, enfocado únicamente en el back-end,
-                        integra consultas a una API REST y un sistema de login y registro con Django.</p>
-
-                    <div h class="cont-cards fade-in">
-                        <!-- Calculadora -->
-                        <a href="https://calculadora-promedios.auricleague.com/" target="_blank" class="card">
-                            <img class="card-img-top" src="static/img/calcu.webp"
-                                alt="Imagen de la calculadore de promedios" loading="lazy">
-                            <div class="card-body">
-                                <h4 class="card-title">Promedios ponderados <span
-                                        class="span-red span-publi">(Publicada)</span></h4>
-                                <p class="card-text">Calculadora de promedios ponderados con notas dinámicas.</p>
-                                <p class="card-text txt-details">
-                                    Esta es una aplicación front-end sencilla, una versión mejorada de una de mis
-                                    primeras aplicaciones desarrolladas en mi juventud y publicada en Google Play, donde
-                                    obtuvo <span class="span-red">más de 5.000 descargas.</span> Incluye:
-                                </p>
-                                <ul>
-                                    <li class="card-text txt-details">Opción para promediar notas con o sin pesos
-                                        distintos</li>
-                                    <li class="card-text txt-details">Cantidad de notas dinámicas</li>
-                                    <li class="card-text txt-details">Modo día/noche</li>
-                                </ul>
-                                <hr class="separador">
-                                <div class="cont-skills">
-                                    <div>
-                                        <img class="img-skills" src="/static/img/JS.png" alt="JS" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <img class="img-skills" src="/static/img/HTML.png" alt="HTML" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <img class="img-skills" src="/static/img/CSS.png" alt="CSS" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <img class="img-skills" src="/static/img/Bootstrap.svg" alt="Bootstrap"
-                                            loading="lazy">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <!-- Auric League -->
-                        <a href="https://www.auricleague.com/" target="_blank" class="card">
-                            <img class="card-img-top" src="static/img/auric.webp"
-                                alt="imagen del inicio de Auric League" loading="lazy">
-                            <div class="card-body">
-                                <h4 class="card-title">Auric League <span class="span-red span-publi">(Publicada)</span>
-                                </h4>
-                                <p class="card-text">Liga, gestor de torneos y sistema de ranking de Dead by Daylight
-                                </p>
-                                <p class="card-text txt-details">
-                                    Desarrollé tanto el backend como el frontend de este proyecto, el más complejo que
-                                    he creado hasta la fecha. Incluye:
-                                </p>
-                                <ul>
-                                    <li class="card-text txt-details">Sistema de registro y login con Flask Session</li>
-                                    <li class="card-text txt-details">Verificación de correos con Flask-Mail</li>
-                                    <li class="card-text txt-details">Hashing de contraseñas con bcrypt</li>
-                                    <li class="card-text txt-details">CRUDs múltiples</li>
-                                    <li class="card-text txt-details">Perfiles personalizados</li>
-                                </ul>
-                                <div class="cont-main-auric-data">
-                                    <div class="cont-auric-data">
-                                        <h3 class="tittle-data">+10</h3>
-                                        <p class="txt-data">Torneos creados</p>
-                                    </div>
-                                    <div class="cont-auric-data">
-                                        <h3 class="tittle-data">+250</h3>
-                                        <p class="txt-data">Usuarios registrados</p>
-                                    </div>
-                                    <div class="cont-auric-data">
-                                        <h3 class="tittle-data">+6</h3>
-                                        <p class="txt-data">Meses de desarrollo</p>
-                                    </div>
-
-                                </div>
-                                <hr class="separador">
-                                <div class="cont-skills">
-                                    <div>
-                                        <img class="img-skills" src="/static/img/Python.png" alt="Python"
-                                            loading="lazy">
-                                    </div>
-                                    <div>
-                                        <img class="img-skills" src="/static/img/Flask.png" alt="Flask" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <img class="img-skills" src="/static/img/MySQL.png" alt="MySQL" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <img class="img-skills" src="/static/img/JS.png" alt="JS" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <img class="img-skills" src="/static/img/HTML.png" alt="HTML" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <img class="img-skills" src="/static/img/CSS.png" alt="CSS" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <img class="img-skills" src="/static/img/Bootstrap.svg" alt="Bootstrap"
-                                            loading="lazy">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <!-- Anime API -->
-                        <a href="#home" class="card">
-                            <img class="card-img-top" src="static/img/anime.webp" alt="Imagen de la web de anime"
-                                loading="lazy">
-                            <div class="card-body">
-                                <h4 class="card-title">Anime Info Finder</h4>
-                                <p class="card-text">Explora y consulta información detallada de tus animes favoritos
-                                </p>
-                                </p>
-                                <p class="card-text txt-details">Este proyecto utiliza la API REST de Jikan para obtener
-                                    datos sobre animes.
-                                    Desarrollé el backend completamente en Django, implementando un sistema de registro
-                                    y login.
-                                    El frontend proviene de una plantilla preexistente. Incluye:</p>
-                                <ul>
-                                    <li class="card-text txt-details">Integración con la API REST de Jikan para obtener
-                                        información detallada de animes</li>
-                                    <li class="card-text txt-details">Sistema de registro y login implementado con
-                                        Django</li>
-                                    <li class="card-text txt-details">Interfaz de usuario basada en una plantilla
-                                        preexistente</li>
-                                </ul>
-
-                                <hr class="separador">
-                                <div class="cont-skills">
-                                    <div>
-                                        <img class="img-skills" src="/static/img/Python.png" alt="Python"
-                                            loading="lazy">
-                                    </div>
-                                    <div>
-                                        <img class="img-skills" src="/static/img/Django.png" alt="Django"
-                                            loading="lazy">
-                                    </div>
-                                    <div>
-                                        <img class="img-skills" src="/static/img/SQLite.png" alt="SQLite3"
-                                            loading="lazy">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-third-row">
-                    <!-- inp_kwargs -->
-                    <hr class="separador mt-auto">
-                    <div class="fade-in">
-                        <div class="library-summary">
-                            <h3>inp_kwargs</h3>
-                            <p>
-                                Una librería de Python para validar entradas de usuario de forma fácil y eficiente, evitando errores y 
-                                asegurando una experiencia robusta.
-                            </p>
-                            <ul>
-                                <li>Valida enteros, flotantes y cadenas de texto.</li>
-                                <li>Soporte para mensajes de error personalizados.</li>
-                                <li>Evita entradas inválidas con criterios como rangos y patrones.</li>
-                            </ul>
-                            <p><strong>Ejemplo:</strong></p>
-                            <pre><code>
-    <span class="code-red">from</span> inp_kwargs <span class="code-red">import</span> input_int
-
-    opcion = input_int(
-        <span class="code-blue">"""
-        Bienvenido a Pizzería Python
-        1. Margarita
-        2. Pepperoni
-        3. Cuatro Quesos
-        4. Salir
-        Ingresa el número de tu elección (1-4): 
-        """</span>, 
-        min_value=<span class="code-white">1</span>, 
-        max_value=<span class="code-white">4</span>, 
-        type_error_message=<span class="code-blue">"Error: Debes ingresar un número válido."</span>,
-        clear_console=<span class="code-white">True</span>
-    )
-
-    <span class="code-red">if</span> opcion == <span class="code-white">4</span>:
-        <span class="code-white">print</span>(<span class="code-blue">"Gracias por visitarnos. ¡Hasta pronto!"</span>)
-    <span class="code-red">else</span>:
-        pizzas = {<span class="code-white">1</span>: <span class="code-blue">"Margarita"</span>, 
-                    <span class="code-white">2</span>: <span class="code-blue">"Pepperoni"</span>, 
-                    <span class="code-white">3</span>: <span class="code-blue">"Cuatro Quesos"</span>}
-        <span class="code-white">print</span>(f<span class="code-blue">"Has elegido la pizza {pizzas[opcion]}. ¡Gracias por tu pedido!"</span>)
-                            </code></pre>
-                        </div>
-                        
-                        <div>
-                            <a href="https://pypi.org/project/inp_kwargs/" target="_blank" class="custom-btn">
-                                 Ver en PyPl</a>
-                            <a href="https://github.com/TheCatAvila/inp_kwargs" target="_blank" class="custom-btn"> 
-                                Ver en GitHub</a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Cuarta sección -->
-        <section id="training">
-            <div class="row">
-                <div class="col-md-12 col-second-row">
-                    <div class="cont-title fade-in">
-                        <H2 class="txt-title">Formación</H2>
-                    </div>
-                    <p class="fade-in">Titulado como Analista Programador, actualmente estudiante de Ingeniería en Informática. Además, soy autodidacta y he complementado mis estudios
-                        con diversos cursos, incluyendo uno en Udemy sobre Python.</p>
-                    <div class="cont-formacion fade-in">
-                        <a href="/static/pdf/Diseño y gestión de base de datos.pdf" target="_blank">
-                            <img class="img-certificate" src="/static/img/basedatos.png"
-                                alt="Certificado Diseño y gestión de base de datos" loading="lazy">
-                        </a>
-                        <a href="/static/pdf/Master en Python.pdf" target="_blank">
-                            <img class="img-certificate" src="/static/img/MasterPython.jpg" alt="Certificado Udemy"
-                                loading="lazy">
-                        </a>
-                        <a href="/static/pdf/Diseño ágil de sistemas.pdf" target="_blank">
-                            <img class="img-certificate" src="/static/img/agile.png"
-                                alt="Certificado Diseño ágil de sistemas" loading="lazy">
-                        </a>
-                        <a href="/static/pdf/Desarrollo de aplicaciones básicas.pdf" target="_blank">
-                            <img class="img-certificate" src="/static/img/apps.png"
-                                alt="Certificado Desarrollo de aplicaciones básicas" loading="lazy">
-                        </a>
-                        <a href="/static/pdf/Soporte computacional.pdf" target="_blank">
-                            <img class="img-certificate" src="/static/img/soporte.png"
-                                alt="Certificado Soporte computacional" loading="lazy">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Quinta row -->
-        <section id="contact">
-            <div class="row">
-                <div class="col-md-12 col-first-row">
-                    <div class="cont-intro">
-                        <h1 id="contact" class="txt-name txt-contact">Contáctame</h1>
-                        <p class="txt-sub-name txt-sub-contact"> <i class="bi bi-envelope me-2"></i>
-                            aviladiego655@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer>
-            <div class="row footer">
-                <div class="col-md-12">
-                    <p class="text-center">© 2026 Diego Ávila. All rights reserved.</p>
-                </div>
-            </div>
+        <footer class="footer">
+            <p>© 2026 Diego Ávila. Todos los derechos reservados.</p>
         </footer>
-
-    </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/static/js/navbar-btns.js"></script>
-    <script src="/static/js/fade-in.js"></script>
-    <script src="/static/js/loader.js"></script>
-
-
+    <script src="/static/js/main.js"></script>
 </body>
-
 </html>
